@@ -3,12 +3,11 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = game.Players.LocalPlayer:GetMouse()
 local CamlockState = false
-local Prediction = 0.1768521
-local HorizontalPrediction = 0.111076110
-local VerticalPrediction = 0.11034856
-local XPrediction = 20
-local YPrediction = 20
-
+local Pred= 0
+local HorizontalPrediction = 0.111110
+local VerticalPrediction = 0.1106
+local XPrediction = 2
+local YPredicti 4
 local Players = game:GetService("Players")	
 local LP = Players.LocalPlayer	
 local Mouse = LP:GetMouse()	
@@ -23,7 +22,7 @@ function FindNearestEnemy()
     local CenterPosition =
         Vector2.new(
         game:GetService("GuiService"):GetScreenResolution().X / 2,
-        game:GetService("GuiService"):GetScreenResolution().Y / 2
+        game:GetServivice"):GetScreenResolution().Y / 2
     )
 
     for _, Player in ipairs(game:GetService("Players"):GetPlayers()) do
